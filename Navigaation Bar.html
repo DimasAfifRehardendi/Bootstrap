@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navigation Bar</title>
+	<!-- load bottstap css -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<!-- load jquery adn boostrap js -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.js"></script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-md bg-danger navbar-dark fixed-top">
+		<!-- navbar-expand-md = menu akan dihidden ketika tampilan device berukurann medium. bg-danger navbar akan mempunyai background warna merah.navbar-dark tulisan menu pada navbar akan lebih gelap. Fixed-top navbar akan berposisi selalu diatas -->
+		<a href="https://ppdb.smktelkom-mlg.sch.id">
+			<img src="logo_putih.png" width="150" >
+		</a>
+		<!-- pemanggilan icon menu saat menubar disembunyikan -->
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu"><span class="navbar navbar-toggler-icon"></span></button>
+
+		<!-- daftar menu pada navbar -->
+		<div class="collapse navbar-collapse" id="menu">
+			<ul class="navbar-nav">
+				<li><a href="#" class="nav-link">Beranda</a></li>
+				<li><a href="#" class="nav-link">Profile</a></li>
+				<li><a href="#" class="nav-link">Testimoni</a></li>
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="kontak" data-toggle="dropdown">Kontak</a>
+					<div class="dropdown-menu">
+						<a href="https://www.google.com/search?q=facebook&rlz=1C1CHBF_enID819ID819&oq=face&aqs=chrome.0.0j69i57j69i61l2j35i39j0.3032j0j9&sourceid=chrome&ie=UTF-8" class="dropdown-item">Facebook</a>
+						<a href="https://www.instagram.com/accounts/login/?hl=id" class="dropdown-item">Instagram</a>
+						<a href="https://twitter.com/login?lang=id" class="dropdown-item">Twitter</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</body>
+</html>

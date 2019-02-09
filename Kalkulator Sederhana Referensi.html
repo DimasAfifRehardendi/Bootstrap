@@ -1,0 +1,34 @@
+<FORM NAME="Calc">
+    <TABLE BORDER=4>
+        <TR>
+            <TD>
+                <INPUT TYPE="text" NAME="Input" Size="20">
+                <br>
+            </TD>
+        </TR>
+        <TR>
+            <TD>
+                <button TYPE="button" NAME="one" VALUE=" 1 " OnClick="Calc.Input.value += '1'">1</button>
+                <button TYPE="button" NAME="two" VALUE=" 2 " OnCLick="Calc.Input.value += '2'">2</button>
+                <button TYPE="button" NAME="three" VALUE=" 3 " OnClick="Calc.Input.value += '3'">3</button>
+                <button TYPE="button" NAME="plus" VALUE=" + " OnClick="Calc.Input.value += ' + '">+</button>
+                <br>
+                <button TYPE="button" NAME="four" VALUE=" 4 " OnClick="Calc.Input.value += '4'">4</button>
+                <button TYPE="button" NAME="five" VALUE=" 5 " OnCLick="Calc.Input.value += '5'">5</button>
+                <button TYPE="button" NAME="six" VALUE=" 6 " OnClick="Calc.Input.value += '6'">6</button>
+                <button TYPE="button" NAME="minus" VALUE=" - " OnClick="Calc.Input.value += ' - '">-</button>
+                <br>
+                <button TYPE="button" NAME="seven" VALUE=" 7 " OnClick="Calc.Input.value += '7'">7</button>
+                <button TYPE="button" NAME="eight" VALUE=" 8 " OnCLick="Calc.Input.value += '8'">8</button>
+                <button TYPE="button" NAME="nine" VALUE=" 9 " OnClick="Calc.Input.value += '9'">9</button>
+                <button TYPE="button" NAME="times" VALUE=" x " OnClick="Calc.Input.value += ' * '">*</button>
+                <br>
+                <button TYPE="button" NAME="clear" VALUE=" c " OnClick="Calc.Input.value = ''">C</button>
+                <button TYPE="button" NAME="zero" VALUE=" 0 " OnClick="Calc.Input.value += '0'">0</button>
+                <button TYPE="button" NAME="DoIt" VALUE=" = " OnClick="Calc.Input.value = eval(Calc.Input.value)">=</button>
+                <button TYPE="button" NAME="div" VALUE=" / " OnClick="Calc.Input.value += ' / '">/</button>
+                <br>
+            </TD>
+        </TR>
+    </TABLE>
+</FORM>
